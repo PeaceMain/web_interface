@@ -7,7 +7,7 @@ Hình ảnh giao diện điều khiển:
 
 ## Cài đặt:
 
-Clone reposity này vào thư mục `catkin_ws/src`sau đó xây dựng catkin workspace.
+Clone repository này vào thư mục `catkin_ws/src`sau đó xây dựng catkin workspace.
 
 ## Chạy gói:
 
