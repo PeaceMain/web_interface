@@ -22,9 +22,30 @@ var test_listener = new ROSLIB.Topic({
 	messageType : 'std_msgs/String'
 });
 
-function display() {
+function display1() {
 	var txt = new ROSLIB.Message({
-		data: "My name is Doan!"
+		data: "Bàn 1 đang gọi"
+	});
+	test_listener.publish(txt);
+}
+
+function display2() {
+	var txt = new ROSLIB.Message({
+		data: "Bàn 2 đang gọi"
+	});
+	test_listener.publish(txt);
+}
+
+function display3() {
+	var txt = new ROSLIB.Message({
+		data: "Bàn 3 đang gọi"
+	});
+	test_listener.publish(txt);
+}
+
+function display4() {
+	var txt = new ROSLIB.Message({
+		data: "Bàn 4 đang gọi"
 	});
 	test_listener.publish(txt);
 }
@@ -43,40 +64,8 @@ function add1and2() {
 		b : 2
 	});
 
-addTwoIntsClient.callService(request, function(result) {
-	document.getElementById("msg").innerHTML = result.sum;
-});
-}
-
-function add4and5() {
-	var request = new ROSLIB.ServiceRequest({
-		a : 4,
-		b : 5
+	addTwoIntsClient.callService(request, function(result) {
+		document.getElementById("msg").innerHTML = result.sum;
 	});
-
-addTwoIntsClient.callService(request, function(result) {
-	document.getElementById("msg").innerHTML = result.sum;
-});
 }
 
-function add2and3() {
-	var request = new ROSLIB.ServiceRequest({
-		a : 2,
-		b : 3
-	});
-
-addTwoIntsClient.callService(request, function(result) {
-	document.getElementById("msg").innerHTML = result.sum;
-});
-}
-
-function add3and4() {
-	var request = new ROSLIB.ServiceRequest({
-		a : 3,
-		b : 4
-	});
-
-addTwoIntsClient.callService(request, function(result) {
-	document.getElementById("msg").innerHTML = result.sum;
-});
-}
