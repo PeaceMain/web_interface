@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8" />
+	<title>Test</title>
+
+	<link rel="stylesheet" href="w3.css">
+
+	<script type="text/javascript" src="http://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+	<script type="text/javascript" src="http://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="w3-cyan">
+
+	<div class="w3-container">
+		<h2 class="w3-center">Bạn đang ở bàn nào?</h2>
+		<table class="w3-table">
+			<tr>
+				<th class="w3-center"><button onclick="display()" class="w3-button w3-black">Bàn 1</button></th>
+				<th class="w3-center"><button onclick="add2and3()" class="w3-button w3-black">Bàn 2</button></th>
+			</tr>
+			<tr>
+				<th class="w3-center"><button onclick="add3and4()" class="w3-button w3-black">Bàn 3</button></th>
+				<th class="w3-center"><button onclick="add4and5()" class="w3-button w3-black">Bàn 4</button></th>
+			</tr>
+		</table>
+	</div>
+	<div class="w3-container w3-teal">
+		<p>Tin nhắn nhận được: <span id="msg"></span></p>
+		<p>Trạng thái kết nối: <span id="status"></span></p>
+	</div>
+</body>
+</html>
