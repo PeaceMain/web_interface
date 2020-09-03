@@ -16,38 +16,39 @@ ros.on('close', function() {
 });
 
 // Publishing a Topic
-var test_listener = new ROSLIB.Topic({
+
+var test_button = new ROSLIB.Topic({
 	ros : ros,
-	name : "/chatter",
-	messageType : 'std_msgs/String'
+	name : "/button",
+	messageType : 'std_msgs/Byte'
 });
 
 function display1() {
 	var txt = new ROSLIB.Message({
-		data: "Bàn 1 đang gọi"
+		data: 1
 	});
-	test_listener.publish(txt);
+	test_button.publish(txt);
 }
 
 function display2() {
 	var txt = new ROSLIB.Message({
-		data: "Bàn 2 đang gọi"
+		data: 2
 	});
-	test_listener.publish(txt);
+	test_button.publish(txt);
 }
 
 function display3() {
 	var txt = new ROSLIB.Message({
-		data: "Bàn 3 đang gọi"
+		data: 3
 	});
-	test_listener.publish(txt);
+	test_button.publish(txt);
 }
 
 function display4() {
 	var txt = new ROSLIB.Message({
-		data: "Bàn 4 đang gọi"
+		data: 4
 	});
-	test_listener.publish(txt);
+	test_button.publish(txt);
 }
 
 // Calling a service
