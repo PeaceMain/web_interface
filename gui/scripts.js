@@ -50,23 +50,3 @@ function display4() {
 	});
 	test_button.publish(txt);
 }
-
-// Calling a service
-var addTwoIntsClient = new ROSLIB.Service({
-	ros : ros,
-	name : '/add_two_ints',
-	serviceType : 'beginner_tutorials/AddTwoInts'
-});
-
-
-function add1and2() {
-	var request = new ROSLIB.ServiceRequest({
-		a : 1,
-		b : 2
-	});
-
-	addTwoIntsClient.callService(request, function(result) {
-		document.getElementById("msg").innerHTML = result.sum;
-	});
-}
-
