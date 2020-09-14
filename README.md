@@ -3,9 +3,12 @@
 Giao tiếp giữa Webserver và ROS Kinetic.
 
 Hình ảnh giao diện điều khiển:
-![The demo image of interface](demo.jpg)
+
+![The demo image of interface](demo.jpg | width=250)
 
 ## Cài đặt:
+Cài đặt ROS Bridge server:
+> `sudo apt-get install ros-kinetic-rosbridge-server`
 
 Clone repository này vào thư mục `catkin_ws/src`sau đó xây dựng catkin workspace.
 
