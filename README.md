@@ -20,3 +20,10 @@ Mở ROS core nếu bạn chưa mở:
 Thực hiện giao tiếp giữa giao diện và ROS:
 > `$ roslaunch web_interface web_interface.launch`
 
+Tạo http server:
+
+> `$ roscd web_interface`
+
+> `$ cd gui`
+
+> `$ python -m http.server`
