@@ -4,7 +4,7 @@ Giao tiếp giữa Webserver và ROS Kinetic.
 
 Hình ảnh giao diện điều khiển:
 
-![The demo image of interface](demo.jpg | width=250)
+<img src="demo.jpg" width="40%">
 
 ## Cài đặt:
 Cài đặt ROS Bridge server:
